@@ -46,10 +46,10 @@ class Ingredient:
         """ Returns a string representation of the Ingredient. """
         # The string is split up into variables for readability.
         title_lines = self.name + "\nServing Size: " + str(self.serving_size) + "\n" + "Calories: " + str(self.nutritional_content["calories"])
-        fats_lines = "\n\tTotal Fats: " + str(self.nutritional_content["fats"]["total"]) + "\n\t\tSaturated Fats: " + str(self.nutritional_content["fats"]["saturated"]) + "\n\t\tTrans Fats: " + str(self.nutritional_content["fats"]["trans"])
-        other_lines = "\n\tCholesterol: " + str(self.nutritional_content["cholesterol"]) + "\n\tSodium: " + str(self.nutritional_content["sodium"]) 
-        carbs_lines = "\n\tTotal Carbohydrates: " + str(self.nutritional_content["carbohydrates"]["total"]) + "\n\t\tDietary Fibers: " + str(self.nutritional_content["carbohydrates"]["fibers"]) + "\n\t\tTotal Sugars: " + str(self.nutritional_content["carbohydrates"]["sugars"]["total"]) + "\n\t\t\tAdded Sugars: " + str(self.nutritional_content["carbohydrates"]["sugars"]["added"])
-        protein_lines = "\n\tProteins: " + str(self.nutritional_content["proteins"])
+        fats_lines = "\nTotal Fats: " + str(self.nutritional_content["fats"]["total"]) + "\n\tSaturated Fats: " + str(self.nutritional_content["fats"]["saturated"]) + "\n\tTrans Fats: " + str(self.nutritional_content["fats"]["trans"])
+        other_lines = "\nCholesterol: " + str(self.nutritional_content["cholesterol"]) + "\nSodium: " + str(self.nutritional_content["sodium"]) 
+        carbs_lines = "\nTotal Carbohydrates: " + str(self.nutritional_content["carbohydrates"]["total"]) + "\n\tDietary Fibers: " + str(self.nutritional_content["carbohydrates"]["fibers"]) + "\n\tTotal Sugars: " + str(self.nutritional_content["carbohydrates"]["sugars"]["total"]) + "\n\t\tAdded Sugars: " + str(self.nutritional_content["carbohydrates"]["sugars"]["added"])
+        protein_lines = "\nProteins: " + str(self.nutritional_content["proteins"])
         return title_lines + fats_lines + other_lines + carbs_lines + protein_lines
     
     def __eq__(self, other):
