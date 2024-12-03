@@ -1,9 +1,16 @@
-import json
+import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
+import json
 import os
+
 
 BASE_DIR = os.path.dirname(__file__)
 VOTES_FILE = os.path.join(BASE_DIR, "data", "votes.json")
+STATIC_DIR = os.path.join(BASE_DIR, "static", "images")
+
+os.makedirs(STATIC_DIR, exist_ok=True)
 
 def load_votes(file_name):
    with open(file_name, 'r') as file:
@@ -23,8 +30,12 @@ def plot_votes(votes_data):
        ax[i].set_title(f"{meal} Votes")
        ax[i].invert_yaxis()
 
+   image_path = os.path.join(STATIC_DIR, "vote_results.png")
    plt.tight_layout()
-   plt.show()
+   plt.savefig(image_path)
+   plt.close()
+
+   return "images/vote_results.png"
 
 def main():
    votes_data = load_votes('data/votes.json')
