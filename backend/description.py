@@ -57,7 +57,7 @@ def get_description(food_name, retries=3, delay=1, max_delay=5, attempt=0):
 
 def generate_name_variations(food_name):
     """
-    ~ Shamar
+    ~ Aaron
     Generates common variations of the food name.
     """
     variations = [food_name, food_name.lower(), food_name.title()]
