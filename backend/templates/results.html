@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Voting Results</h1>
+    {% if votes %}
+        <ul>
+            {% for item, meal_data in votes.items() %}
+                <li>
+                    <strong>{{ item }}:</strong>
+                    <ul>
+                        <li>Breakfast: {{ meal_data.Breakfast }} votes</li>
+                        <li>Lunch: {{ meal_data.Lunch }} votes</li>
+                        <li>Dinner: {{ meal_data.Dinner }} votes</li>
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No votes have been cast yet.</p>
+    {% endif %}
+    <a href="/">Go Back</a>
+</body>
+</html>
