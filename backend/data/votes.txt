@@ -1,0 +1,182 @@
+{
+    "Cinnamon Chia Pudding": {
+        "Breakfast": 45,
+        "Lunch": 34,
+        "Dinner": 26
+    },
+    "Veggie Burger": {
+        "Breakfast": 52,
+        "Lunch": 30,
+        "Dinner": 18
+    },
+    "Middle Eastern Tomato Sauce": {
+        "Breakfast": 38,
+        "Lunch": 42,
+        "Dinner": 20
+    },
+    "Fresh Berries": {
+        "Breakfast": 60,
+        "Lunch": 25,
+        "Dinner": 15
+    },
+    "Greek Grilled Chicken": {
+        "Breakfast": 70,
+        "Lunch": 20,
+        "Dinner": 10
+    },
+    "Scrambled Just\u00ae Egg": {
+        "Breakfast": 65,
+        "Lunch": 25,
+        "Dinner": 10
+    },
+    "Roasted Eggplant & Zucchini": {
+        "Breakfast": 40,
+        "Lunch": 35,
+        "Dinner": 25
+    },
+    "Seasoned Home Fries": {
+        "Breakfast": 30,
+        "Lunch": 45,
+        "Dinner": 25
+    },
+    "Pasta Alfredo": {
+        "Breakfast": 55,
+        "Lunch": 40,
+        "Dinner": 5
+    },
+    "Cheesy Bacon Hot Dog": {
+        "Breakfast": 20,
+        "Lunch": 55,
+        "Dinner": 25
+    },
+    "Chicken & Tomato Alfredo Pasta Bake": {
+        "Breakfast": 60,
+        "Lunch": 25,
+        "Dinner": 15
+    },
+    "Taco Beef": {
+        "Breakfast": 50,
+        "Lunch": 35,
+        "Dinner": 15
+    },
+    "Israeli Couscous Salad": {
+        "Breakfast": 20,
+        "Lunch": 60,
+        "Dinner": 20
+    },
+    "Chicken Tagine": {
+        "Breakfast": 30,
+        "Lunch": 45,
+        "Dinner": 25
+    },
+    "Sweet Chili Green Beans": {
+        "Breakfast": 20,
+        "Lunch": 45,
+        "Dinner": 35
+    },
+    "Diced Seasoned Chicken": {
+        "Breakfast": 50,
+        "Lunch": 35,
+        "Dinner": 15
+    },
+    "Balsamic Marinated Grape Tomatoes": {
+        "Breakfast": 40,
+        "Lunch": 45,
+        "Dinner": 15
+    },
+    "Crispy French Fries": {
+        "Breakfast": 30,
+        "Lunch": 45,
+        "Dinner": 25
+    },
+    "Pepperoni Pizza": {
+        "Breakfast": 25,
+        "Lunch": 50,
+        "Dinner": 25
+    },
+    "Spinach & Ricotta Pizza": {
+        "Breakfast": 25,
+        "Lunch": 45,
+        "Dinner": 30
+    },
+    "Pesto Turkey & Mozzarella Panini": {
+        "Breakfast": 15,
+        "Lunch": 60,
+        "Dinner": 25
+    },
+    "Old Bay Potato Chips": {
+        "Breakfast": 25,
+        "Lunch": 40,
+        "Dinner": 35
+    },
+    "Black Bean Jicama Salad": {
+        "Breakfast": 20,
+        "Lunch": 51,
+        "Dinner": 30
+    },
+    "Roasted Tofu": {
+        "Breakfast": 30,
+        "Lunch": 40,
+        "Dinner": 30
+    },
+    "Cheese Pizza": {
+        "Breakfast": 15,
+        "Lunch": 50,
+        "Dinner": 35
+    },
+    "Cream Cheese Iced Carrot Cake": {
+        "Breakfast": 40,
+        "Lunch": 35,
+        "Dinner": 25
+    },
+    "Sunflower Seeds": {
+        "Breakfast": 30,
+        "Lunch": 40,
+        "Dinner": 30
+    },
+    "Diced Pork Sausage": {
+        "Breakfast": 25,
+        "Lunch": 45,
+        "Dinner": 30
+    },
+    "Seasoned Scrambled Eggs": {
+        "Breakfast": 40,
+        "Lunch": 35,
+        "Dinner": 25
+    },
+    "Turkey Patty": {
+        "Breakfast": 30,
+        "Lunch": 40,
+        "Dinner": 30
+    },
+    "Hash Brown Patty": {
+        "Breakfast": 30,
+        "Lunch": 35,
+        "Dinner": 35
+    },
+    "Mediterranean Pasta Salad": {
+        "Breakfast": 20,
+        "Lunch": 45,
+        "Dinner": 35
+    },
+    "Fajita Vegetable Medley": {
+        "Breakfast": 30,
+        "Lunch": 40,
+        "Dinner": 30
+    },
+    "Vegan Pasta Bake": {
+        "Breakfast": 20,
+        "Lunch": 55,
+        "Dinner": 25
+    },
+    "Blanched Broccoli": {
+        "Breakfast": 20,
+        "Lunch": 35,
+        "Dinner": 45
+    },
+    "Red Potato Salad": {
+        "Breakfast": 25,
+        "Lunch": 45,
+        "Dinner": 31
+    }
+}
