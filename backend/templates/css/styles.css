@@ -1,0 +1,55 @@
+:root {
+  --page-width: calc(100vw);
+  --scrollbar-width: 16px;
+  --content-width: calc((var(--page-width) - var(--scrollbar-width)) - 16px);
+  --tc-info-width: 200px;
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  background-color: rgba(105, 60, 160, 1);
+}
+a {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+em {
+  margin: 0;
+}
+.float-left {
+  float: left;
+  margin-right: 20px;
+}
+.float-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(185, 110, 255, 1);
+  color: rgba(30, 0, 50, 1);
+}
+.nav-container {
+  background-color: rgba(230, 205, 255, 1);
+}
+.nav-title {
+  background-color: rgba(205, 160, 255, 0.6);
+}
+
+@media screen and (max-width: 500px) {
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: rgba(205, 160, 255, 0.6);
+  }
+}

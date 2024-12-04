@@ -1,4 +1,4 @@
 Flask==2.1.2
 wikipedia==1.4.0
 Werkzeug==2.1.2
-matplotlib==3.93
+matplotlib==3.9.3
