@@ -8,9 +8,8 @@ from graph import plot_votes
 BASE_DIR = os.path.dirname(__file__)
 MENU_FILE = os.path.join(BASE_DIR, "data", "menu.json")
 VOTES_FILE = os.path.join(BASE_DIR, "data", "votes.json")
-"""
-~ Shamar
-"""
+MEALS_FILE = os.path.join(BASE_DIR, "data", "meals.json")
+
 app = Flask(__name__)
 
 MENU_FILE = "data/menu.json"
