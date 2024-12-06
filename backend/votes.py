@@ -35,7 +35,7 @@ def submit_vote(votes_file, meal, menu_item_name):
     meal_names = [choice["fields"]["choice_text"] for choice in meals["choices"][meal_type]]
 
     if menu_item_name not in meal_names:
-        meals["choices"][meal_type].append({"model": "polls.choice", "meal": meal, "pk": meals["choices"][meal_type][-1]["pk"] + 1, "fields": {"question": meals["choices"][meal_type][-1]["question"], "choice_text": menu_item_name, "votes": 1}})
+        meals["choices"][meal_type].append({"model": "polls.choice", "meal": meal, "pk": meals["choices"][meal_type][-1]["pk"] + 1, "fields": {"question": meals["choices"][meal_type][-1]["fields"]["question"], "choice_text": menu_item_name, "votes": 1}})
     else:
         menu_index = meal_names.index(menu_item_name)
         meals["choices"][meal_type][menu_index]["fields"]["votes"] += 1

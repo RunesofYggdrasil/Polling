@@ -110,7 +110,7 @@
         "pk": 9,
         "fields": {
           "question": 1,
-          "choice_text": "Scrambled Just® Egg",
+          "choice_text": "Scrambled Just\u00c2\u00ae Egg",
           "votes": 0
         }
       },
