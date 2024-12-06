@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 from menu import load_menu
-from votes import record_vote, load_votes
+from votes import record_vote, submit_vote, load_votes
 from description import get_description
 import os
 from graph import plot_votes
@@ -19,7 +19,7 @@ VOTES_FILE = "data/votes.json"
 def index():
    menu_items = load_menu(MENU_FILE)
    graph_path = plot_votes(load_votes(VOTES_FILE))
-   return render_template('index.html', menu_items=menu_items, graph_path=graph_path)
+   return render_template('primary.html', menu_items=menu_items, graph_path=graph_path)
 
 @app.route('/vote', methods=['POST'])
 def vote():
@@ -35,6 +35,13 @@ def results():
    graph_path = plot_votes(votes)
    return render_template('results.html', votes=votes, graph_path=graph_path)
 
+@app.route('/vote-new', methods=['POST'])
+def vote_new():
+   meal = request.form.get('meal_type')
+   menu_item = request.form.get('menu_item')
+   if meal and menu_item:
+      submit_vote(MEALS_FILE, meal, menu_item)
+   return redirect(url_for('results'))
 
 @app.route('/description', methods=['POST'])
 def description():
