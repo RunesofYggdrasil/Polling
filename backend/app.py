@@ -19,7 +19,7 @@ VOTES_FILE = "data/votes.json"
 def index():
    menu_items = load_menu(MENU_FILE)
    graph_path = plot_votes(load_votes(VOTES_FILE))
-   return render_template('index.html', menu_items=menu_items, graph_path=graph_path)
+   return render_template('primary.html', menu_items=menu_items, graph_path=graph_path)
 
 @app.route('/vote', methods=['POST'])
 def vote():
@@ -34,12 +34,6 @@ def results():
    votes = load_votes(VOTES_FILE)
    graph_path = plot_votes(votes)
    return render_template('results.html', votes=votes, graph_path=graph_path)
-
-@app.route('/apl')
-def apl():
-   menu_items = load_menu(MENU_FILE)
-   graph_path = plot_votes(load_votes(VOTES_FILE))
-   return render_template('primary.html', menu_items=menu_items, graph_path=graph_path)
 
 @app.route('/vote-new', methods=['POST'])
 def vote_new():
