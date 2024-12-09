@@ -17,6 +17,7 @@ a {
 
 nav {
   width: calc(var(--content-width) - 20px);
+  margin-bottom: 20px;
   height: 90px;
   padding: 10px;
   border-radius: 10px;

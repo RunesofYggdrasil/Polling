@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="css/navigation.css"
+      href="{{ url_for('static', filename='navigation.css') }}"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
     <link
-      href="css/styles.css"
+      href="{{ url_for('static', filename='styles.css') }}"
       rel="stylesheet"
       type="text/css"
       media="all"
@@ -41,11 +41,22 @@
         </div>
       </div>
     </nav>
-    <form method="POST" action="/vote-new">
-      <input type="text" name="meal_type" id="meal_type" />
-      <input type="text" name="menu_item" id="menu_item" />
-      <button type="submit">Submit</button>
-    </form>
-    <script src="script/script.js"></script>
+    <main>
+      <div class="body-container">
+        <div class="body-graph-container">
+          <div class="body-graph">
+            <img src="{{ url_for('static', filename=breakfast_path) }}" />
+          </div>
+          <div class="body-graph">
+            <img src="{{ url_for('static', filename=lunch_path) }}" />
+          </div>
+          <div class="body-graph">
+            <img src="{{ url_for('static', filename=dinner_path) }}" />
+          </div>
+        </div>
+        <div class="body-content"><h1>Hi</h1></div>
+      </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
