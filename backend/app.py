@@ -19,7 +19,7 @@ VOTES_FILE = "data/votes.json"
 def index():
    menu_items = load_menu(MENU_FILE)
    graph_path = plot_votes(load_votes(VOTES_FILE))
-   return render_template('primary.html', menu_items=menu_items, graph_path=graph_path)
+   return render_template('primary.html', menu_items=menu_items, breakfast_path=graph_path, lunch_path=graph_path, dinner_path=graph_path)
 
 @app.route('/vote', methods=['POST'])
 def vote():

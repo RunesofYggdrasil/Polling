@@ -11,3 +11,4 @@ window.addEventListener("resize", () => {
 window.addEventListener("scroll", () => {
   setupPageWidth();
 });
+console.log("hi");
